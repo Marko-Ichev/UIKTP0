@@ -1,0 +1,16 @@
+.navbar-custom{
+    background-color: #B5F6CF;
+}
+.navbar-logo {
+    width: 100px;
+}
+.navbar-element {
+    font-size: 1.3rem;
+    color: #111E54;
+
+}
+
+.navbar-custom a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

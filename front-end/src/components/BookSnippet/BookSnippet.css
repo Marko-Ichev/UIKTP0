@@ -1,0 +1,14 @@
+.book-snippet {
+    min-height: 300px;
+    display: inline-block;
+    max-width: 340px;
+
+}
+
+.book-snippet:hover {
+    cursor: pointer;
+}
+
+.book-cover {
+    width: 250px;
+}
