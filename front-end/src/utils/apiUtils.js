@@ -1,7 +1,7 @@
 import { ACCESS_TOKEN} from '../constants';
 import axios from "../custom-axios/axios";
-import jwt from 'jsonwebtoken'
 import instance from "../custom-axios/axios";
+import { jwtDecode } from "jwt-decode";
 
 const apiUtils = {
     get: (url) => {
@@ -43,7 +43,7 @@ function token() {
 }
 
 function isExpired(token){
-    let decodedToken=jwt.decode(token, {complete: true});
+    let decodedToken=jwtDecode(token, {complete: true});
     let dateNow = new Date();
     return (decodedToken) ? decodedToken.exp < dateNow.getTime() : false;
 }
